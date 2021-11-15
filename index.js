@@ -96,7 +96,7 @@ if(k>10){
   
 		
 }
-//should plot the grapgh until t reaches 100.
+//should plot the graph until t reaches 100.
    
   setTimeout(function() {
     requestAnimationFrame(advance);
