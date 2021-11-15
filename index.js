@@ -77,7 +77,8 @@ var myLiveChart = new Chart(ctx, chart);
 
 var k=0;
 function advance(){
-	if(k<100){
+//should plot the graph until t reaches 100.
+if(k<100){
 //updating the graph with data points from t=0 to t=100
 	  myLiveChart.data.datasets[0].data.push(y1[k]);
   myLiveChart.data.datasets[1].data.push(y2[k]);
@@ -95,9 +96,7 @@ if(k>10){
    $('.chartAreaWrapper').animate({scrollLeft:newwidth});
   
 		
-}
-//should plot the graph until t reaches 100.
-   
+}   
   setTimeout(function() {
     requestAnimationFrame(advance);
   }, 250);
